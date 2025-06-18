@@ -1,0 +1,153 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Solutions Immobilières Personnalisées | AVONOVA
+{% endblock %}
+{% block description %}
+    <meta name="description" content="
+    Découvrez les services de vente immobilière d'AVONOVA pour des transactions simplifiées. Une équipe dédiée prête à répondre à toutes vos questions.
+" />
+{% endblock %}
+        {% block keywords %}
+            <meta name="keywords" content="Contact AVONOVA, assistance vente immobilière, support notaires et avocats, AVONOVA coordonnées, service client AVONOVA." />
+        {% endblock %}
+
+{% block og %}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Solutions Immobilières Personnalisées | AVONOVA" />
+    <meta property="twitter:title" content="Solutions Immobilières Personnalisées | AVONOVA" />
+    <meta property="twitter:description" content="Découvrez les services de vente immobilière d'AVONOVA pour des transactions simplifiées. Une équipe dédiée prête à répondre à toutes vos questions." />
+    <meta property="og:url" content="avonova.fr/contact" />
+    <meta property="og:image" content="https://images.prismic.io/avonova/Zfr-rwmzsfHOGI25_LOGODE%CC%81FINITIFAVONOVA-200x200px-.png?auto=format,compress" />
+    <meta property="twitter:image" content="https://images.prismic.io/avonova/Zfr-rwmzsfHOGI25_LOGODE%CC%81FINITIFAVONOVA-200x200px-.png?auto=format,compress" />
+    <meta property="twitter:card" content="summary_large_image" />
+{% endblock %}
+
+ {% block canonical %}
+     <link rel="canonical" href="{{ app.request.getSchemeAndHttpHost ~ app.request.baseUrl ~ app.request.pathInfo }}">
+ {% endblock %}
+
+{% block body %}
+
+    {{ include('_partials/preheader.html.twig') }}
+
+
+
+    <main class="body-bg">
+        {{ include('_partials/header.html.twig') }}
+
+        <!-- ==================== Breadcrumb Start Here ==================== -->
+        <section class="breadcrumb padding-y-120">
+            <img src="assets/images/thumbs/breadcrumb-img.png" alt="" class="breadcrumb__img">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="breadcrumb__wrapper">
+                            <h1 class="breadcrumb__title"> Contactez nous</h1>
+                            <ul class="breadcrumb__list">
+                                <li class="breadcrumb__item"><a title="AVONOVA" href="{{ url('app_index') }}" class="breadcrumb__link"> <i class="las la-home"></i> Accueil</a> </li>
+                                <li class="breadcrumb__item"><i class="fas fa-angle-right"></i></li>
+                                <li class="breadcrumb__item"> <span class="breadcrumb__item-text"> Contactez nous </span> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================== Breadcrumb End Here ==================== -->
+
+        <!-- ============================= Contact Top Section Start ======================= -->
+        <section class="contact-top padding-y-120">
+            <div class="container container-two">
+                <div class="section-heading">
+            <span class="section-heading__subtitle bg-gray-100">
+                <span class="text-gradient fw-semibold">Contact</span>
+            </span>
+                    <h2 class="section-heading__title">Contactez nous!</h2>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-card">
+                            <span class="contact-card__icon"><i class="fas fa-paper-plane"></i></span>
+                            <h5 class="contact-card__title">Email</h5>
+                            <p class="contact-card__text font-18">
+                                <a title="contact@avonova.fr" href="mailto:contact@avonova.fr"
+  class="link">contact@avonova.fr</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-card">
+                            <span class="contact-card__icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <h5 class="contact-card__title">Localisation</h5>
+                            <p class="contact-card__text font-18">
+                                6 rue d’Armaillé, 75017 Paris
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="contact-card">
+                            <span class="contact-card__icon"><i class="fas fa-phone"></i></span>
+                            <h5 class="contact-card__title">Téléphone</h5>
+                            <p class="contact-card__text font-18">
+                                <a title="01 89 70 85 15" href="tel:01 89 70 85 15" class="link">01 89 70 85 15</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============================= Contact Top Section End ======================= -->
+
+
+        <div class="contact-map address-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.988997043853!2d2.2895651771344783!3d48.87748629936164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f92d2a43caf%3A0x916c93ae06a62893!2s6%20Rue%20d&#39;Armaill%C3%A9!5e0!3m2!1sfr!2sfr!4v1710928062182!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <section class="contact-us-section padding-b-120">
+            <div class="container container-two">
+                <div class="contact-form bg-white">
+                    <div class="section-heading">
+        <span class="section-heading__subtitle bg-gray-100">
+            <span class="text-gradient fw-semibold">Contactez nous</span>
+        </span>
+                        <h2 class="section-heading__title">Vous avez une question ? </h2>
+                        <p class="section-heading__desc">Nous ferons le maximum pour vous répondre dans les meilleurs délais</p>
+                    </div>
+                    {{ form_start(contactForm) }}
+                        <div class="row gy-4">
+                            <div class="col-sm-6 col-xs-6">
+                                {{ form_row(contactForm.lastName, {'attr': {'class': 'common-input', 'placeholder': 'Votre Nom'}}) }}
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                {{ form_row(contactForm.name, {'attr': {'class': 'common-input', 'placeholder': 'Votre Prénom'}}) }}
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                {{ form_row(contactForm.email, {'attr': {'class': 'common-input', 'placeholder': 'Votre Email'}}) }}
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                {{ form_row(contactForm.phone, {'attr': {'class': 'common-input', 'placeholder': 'Votre Téléphone'}}) }}
+                            </div>
+                            <div class="col-sm-6 col-xs-6">
+                                {{ form_row(contactForm.subject, {'attr': {'class': 'common-input', 'placeholder': 'Sujet'}}) }}
+                            </div>
+                            <div class="col-12">
+                                {{ form_row(contactForm.message, {'attr': {'class': 'common-input', 'placeholder': 'Votre Message'}}) }}
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-main w-100">Envoyer</button>
+                            </div>
+                        </div>
+                    {{ form_end(contactForm) }}
+                </div>
+            </div>
+        </section>
+
+
+
+        {{ include('_partials/footer.html.twig') }}
+
+    </main>
+
+{% endblock %}
